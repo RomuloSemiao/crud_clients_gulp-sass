@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Lista de Clientes</title>
+
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <main class="clients">
+            <h1 class="clients__title">Clientes</h1>
+            <form class="clients__form">
+                <div class="clients__data--wrapper">
+                    <div class="clients__data--items">
+                        <label class="clients__data--label" for="data-name"
+                            >Nome</label
+                        >
+                        <input
+                            class="clients__data--input"
+                            id="data-name"
+                            name="data-name"
+                            type="text"
+                            data-ls-module="charCounter"
+                            maxlength="40"
+                            required
+                        />
+                    </div>
+                    <div class="clients__data--items">
+                        <label class="clients__data--label" for="data-email"
+                            >Email</label
+                        >
+                        <input
+                            class="clients__data--input"
+                            id="data-email"
+                            name="data-email"
+                            type="email"
+                            data-ls-module="charCounter"
+                            maxlength="50"
+                            required
+                        />
+                    </div>
+                    <div class="clients__data--items">
+                        <label class="clients__data--label" for="data-telephone"
+                            >Telefone</label
+                        >
+                        <input
+                            class="clients__data--input"
+                            id="data-telephone"
+                            name="data-telephone"
+                            type="tel"
+                            data-ls-module="charCounter"
+                            maxlength="12"
+                            required
+                        />
+                    </div>
+                    <div class="clients__age--items">
+                        <label class="clients__age--label" for="data-age"
+                            >Idade</label
+                        >
+                        <div class="clients__age--wrapper">
+                            <button
+                                class="clients-age__button clients-age__button--decrement"
+                                type="button"
+                            ></button>
+                            <input
+                                class="clients__age--input"
+                                type="text"
+                                value="1"
+                                disabled
+                            />
+                            <button
+                                class="clients-age__button clients-age__button--increment"
+                                type="button"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="clients__gender--fieldset">
+                    <legend class="clients__gender--legend">Gênero</legend>
+                    <div class="clients__gender--wrapper">
+                        <div class="clients__gender--items">
+                            <input
+                                class="clients-gender__inputs"
+                                type="radio"
+                                name="gender"
+                                id="gender-male"
+                                value="Masculino"
+                                required
+                            />
+                            <label
+                                class="clients-gender__labels"
+                                for="gender-male"
+                                >Masculino</label
+                            >
+                            <div class="clients-gender__inputs--fake"></div>
+                        </div>
+                        <div class="clients__gender--items">
+                            <input
+                                class="clients-gender__inputs"
+                                type="radio"
+                                name="gender"
+                                id="gender-female"
+                                value="Feminino"
+                                required
+                            />
+                            <label
+                                class="clients-gender__labels"
+                                for="gender-female"
+                                >Feminino</label
+                            >
+                            <div class="clients-gender__inputs--fake"></div>
+                        </div>
+                        <div class="clients__gender--items">
+                            <input
+                                class="clients-gender__inputs"
+                                type="radio"
+                                name="gender"
+                                id="gender-transgender"
+                                value="Transgênero"
+                                required
+                            />
+                            <label
+                                class="clients-gender__labels"
+                                for="gender-transgender"
+                                >Transgênero</label
+                            >
+                            <div class="clients-gender__inputs--fake"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="clients-form__submit" type="submit">
+                    Adicionar cliente
+                </button>
+            </form>
+
+            <div class="cadastrados-list">
+                <div class="cadastrados__items--header">
+                    <span>Nome</span>
+                    <span>Email</span>
+                    <span>Telefone</span>
+                    <span>Idade</span>
+                    <span>Gênero</span>
+                </div>
+                <ul class="cadastrados__items"></ul>
+            </div>
+        </main>
+        <script src="./bundle.js"></script>
+    </body>
+</html>
