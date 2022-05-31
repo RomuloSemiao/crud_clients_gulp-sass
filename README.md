@@ -8,4 +8,4 @@ Apenas rode o comando $npm install e depois o $npm run dev para receber o localh
     <img src=”https://pasteboard.co/HnRWTKmjNs0U.png”>
 </p>
 
-![Imagem](https://pasteboard.co/HnRWTKmjNs0U.png)
+![](https://pasteboard.co/HnRWTKmjNs0U.png)Welcome to the crud_clients_gulp-sass wiki!
