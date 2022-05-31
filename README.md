@@ -8,4 +8,4 @@ Apenas rode o comando $npm install e depois o $npm run dev para receber o localh
     <img src=”https://pasteboard.co/HnRWTKmjNs0U.png”>
 </p>
 
-![](https://pasteboard.co/HnRWTKmjNs0U.png)
+![Imagem](https://pasteboard.co/HnRWTKmjNs0U.png)
